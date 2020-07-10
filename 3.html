@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width:100px;
+            background-color: aquamarine;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id=div></div>
+    <script>
+        var nums=[1,1,1,1,1]
+         var runningSum = function(nums) {
+             var r=nums.reduce((result,num)=>{
+             return result+result+num
+         },0)
+         return r
+         };
+         console.log(runningSum(nums))
+    </script>
+</body>
+</html>
